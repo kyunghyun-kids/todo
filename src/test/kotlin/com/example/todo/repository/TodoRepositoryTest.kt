@@ -31,7 +31,7 @@ class TodoRepositoryTest {
         val result = todoRepositoryImpl.save(todo)
 
         assertThat(result?.index).isEqualTo(1)
-        assertThat(result?.createAt).isNotNull
+        assertThat(result?.createdAt).isNotNull
         assertThat(result?.updatedAt).isNotNull
         assertThat(result?.title).isEqualTo("테스트 일정")
         assertThat(result?.description).isEqualTo("테스트")

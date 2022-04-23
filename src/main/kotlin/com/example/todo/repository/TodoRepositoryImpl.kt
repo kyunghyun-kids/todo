@@ -28,7 +28,7 @@ class TodoRepositoryImpl(
             // insert
             todo.apply {
                 this.index = ++todoDataBase.index
-                this.createAt = LocalDateTime.now()
+                this.createdAt = LocalDateTime.now()
                 this.updatedAt = LocalDateTime.now()
             }.run {
                 todoDataBase.todoList.add(todo)
